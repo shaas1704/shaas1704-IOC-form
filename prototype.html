@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HTML Input Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 550px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+        
+    /* On small screens, set height to 'auto' for the grid */
+    @media screen and (max-width: 767px) {
+      .row.content {height: auto;} 
+    }
+  </style>   
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse visible-xs">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">IOC</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Dashboard</a></li>
+        <li><a href="#">21</a></li>
+        <li><a href="#">Male</a></li>
+        <li><a href="#">Intern</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container">
+    <form action="action_page.php">
+
+    <header>
+        <div class="main">
+        </div>
+    </header>
+    <br>
+
+    <label for="Employee Code">Employee Code</label>
+    <input type="text" id="ecode" name="empcode" placeholder="Employee code..">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="dob">Date of Birth</label>
+    <input type="date" id="dob" name="dob" placeholder="Date">
+
+    <label for="gradedate">Grade Date</label>
+    <input type="date" id="grd" name="gradedate" placeholder="Date">
+
+    <label for="qualification">Qualification</label>
+    <select id="qualification" name="qualification">
+        <option value="high school">High School</option>
+        <option value="bachelors">Bachelors</option>
+        <option value="masters">Masters</option>
+        <option value="phd">PhD</option>
+        <option value="other">Other</option>
+    </select>
+
+    <label for="leave">Leave Data</label>
+    <textarea id="leave" name="leave" placeholder="Any additional data.." style="height:100px"></textarea>
+
+    <input type="submit" value="Submit">
+
+    </form>
+</div>
+</body>
+
+</html>
+
